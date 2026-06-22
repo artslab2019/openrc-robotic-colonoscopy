@@ -7,9 +7,11 @@
 [![Design Paper](https://img.shields.io/badge/arXiv-2509.10735-b31b1b.svg)](https://arxiv.org/abs/2509.10735)
 [![License: CC BY 4.0](https://img.shields.io/badge/Dataset%20License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-OpenRC is an open-source framework that **robotizes a conventional clinical colonoscope without altering its workflow.** A modular robotic platform actuates the scope's existing insertion-tube and steering knobs while simultaneously recording the endoscopic video, operator commands, low-level actuation signals, and the distal-tip pose. The result is a reproducible testbed for studying robotic colonoscopy, imitation/vision-language-action learning, and surgical autonomy. We colelct and release a large, time-aligned multimodal dataset on HuggingFace using this platform. 
+OpenRC is an open-source framework that **robotizes a conventional clinical colonoscope without altering its workflow.** A modular robotic platform actuates the scope's existing insertion-tube and steering knobs while simultaneously recording the endoscopic video, operator commands, low-level actuation signals, and the distal-tip pose. The result is a reproducible testbed for studying robotic colonoscopy, imitation/vision-language-action learning, and surgical autonomy. 
 
 This repository provides a higher-level-of-detail overview of the **hardware platform** and the **colon phantom testbed**. Full analytical design, optimization, and fabrication derivations are documented in our companion paper, [arXiv:2509.10735](https://arxiv.org/abs/2509.10735).
+
+This repository also includes the OpenRC dataset release accompanying this platform. The dataset consists of synchronized multimodal trajectories clelcted uing this platform on real colon phantoms, spanning navigation, scanning, and failure/recovery scenarios. 
 
 ---
 
