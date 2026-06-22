@@ -112,7 +112,6 @@ The OpenRC dataset is hosted on HuggingFace in **[LeRobot](https://github.com/hu
 | **Frames** | 2,095,587 (~19.4 hours) |
 | **Camera** | 383 × 396 endoscopic video @ 30 fps |
 | **Size** | 19.7 GB |
-| **Robot type** | Cobra Colonoscope (4-motor tendon-driven flexible endoscope) |
 | **Recording** | ROS2 Humble; calibration-based time alignment across streams |
 | **Collection** | 5 intermediate-skill operators, 10 structured task variations, Nov 2025 – Jan 2026 |
 | **License** | CC BY 4.0 |
