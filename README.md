@@ -10,7 +10,7 @@ OpenRC is an open-source framework that **robotizes a conventional clinical colo
 
 This repository provides a higher-level-of-detail overview of the **hardware platform** and the **colon phantom testbed**. Full analytical design, optimization, and fabrication derivations are documented in our companion paper, [arXiv:2509.10735](https://arxiv.org/abs/2509.10735).
 
-This repository also includes the OpenRC dataset release accompanying this platform. The dataset consists of synchronized multimodal trajectories clelcted uing this platform on real colon phantoms, spanning navigation, scanning, and failure/recovery scenarios. 
+This repository also includes the OpenRC dataset release accompanying this platform. The dataset consists of synchronized multimodal trajectories collected using this platform on real colon phantoms, spanning navigation, scanning, and failure/recovery scenarios.
 
 ---
 
@@ -71,7 +71,7 @@ The two fabricated actuation modules:
 | [Software & ROS2 Stack](docs/software.md) | ROS2 node graph, topics, and control/recording architecture (implementation details) |
 | [Colon Phantom Fabrication](docs/phantom-fabrication.md) | Polyp and colon-wall molding/casting procedure |
 | [Bill of Materials](docs/bill-of-materials.md) | Components, part numbers, and suppliers |
-| [CAD & Assembly Files](docs/assembly.md) | SolidWorks/STEP assembly and STL parts |
+| [CAD & Assembly Files](docs/assembly.md) | STEP assembly exports and STL files for printable parts |
 
 ---
 
@@ -175,8 +175,8 @@ See the [dataset card](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotic
 
 - [x] Dataset release (HuggingFace, LeRobot format).
 - [x] Hardware, software, and phantom-fabrication documentation ([`docs/`](docs/)).
-- [ ] Complete the [Bill of Materials](docs/bill-of-materials.md) with final quantities and suppliers.
-- [ ] Publish the **SolidWorks/STEP assembly and STL files** (feeding module, bending module, phantom molds/stands) — see [CAD & Assembly Files](docs/assembly.md).
+- [x] CAD release for feeding and bending modules: STEP assembly exports and STL files for printable parts.
+- [ ] Complete the [Bill of Materials](docs/bill-of-materials.md) with remaining phantom-material details.
 
 ---
 

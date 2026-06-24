@@ -2,7 +2,7 @@
 
 [← Back to README](../README.md)
 
-> For the full analytical design, parameter-optimization spaces, and mechanical fabrication of the feeding and bending modules, see the companion paper [arXiv:2509.10735](https://arxiv.org/abs/2509.10735). The summary below is intended as a platform-level overview. For part numbers and quantities see the [Bill of Materials](bill-of-materials.md); for the CAD/STL package see [CAD & Assembly Files](assembly.md).
+> For the full analytical design, parameter-optimization spaces, and mechanical fabrication of the feeding and bending modules, see the companion paper [arXiv:2509.10735](https://arxiv.org/abs/2509.10735). The summary below is intended as a platform-level overview. For part numbers and quantities see the [Bill of Materials](bill-of-materials.md); for STEP assembly exports and printable STL files see [CAD & Assembly Files](assembly.md).
 
 OpenRC is organized into four interconnected subsystems:
 
