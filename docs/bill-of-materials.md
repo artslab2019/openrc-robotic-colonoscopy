@@ -4,6 +4,8 @@
 
 Components used in the OpenRC platform.
 
+The tables below list the off-the-shelf hardware only. Printed mechanical parts are provided as STEP exports in [CAD & Assembly Files](assembly.md) and can be exported to STL as needed.
+
 ## Actuation & Control
 
 | Component | Part / Model | Qty | Supplier | Approx. cost | Notes |
@@ -31,12 +33,7 @@ Components used in the OpenRC platform.
 
 ## Mechanical / Structure
 
-| Component | Part / Model | Qty | Supplier | Approx. cost | Notes |
-|-----------|--------------|-----|----------|--------------|-------|
-| Flexible coupling | `TODO` | TODO | TODO | TODO | Motor ↔ spline shaft |
-| Spline shaft & nut | `TODO` | TODO | TODO | TODO | |
-| Fasteners (bolts, nuts, inserts) | `TODO` | TODO | TODO | TODO | |
-| 3D-printed parts (cages, collets, plates, stands) | See CAD/STL package | — | — | — | Provided in [CAD & Assembly Files](assembly.md) |
+See [CAD & Assembly Files](assembly.md) for the STEP exports used to generate the printed mechanical parts.
 
 ## Phantom Materials
 
