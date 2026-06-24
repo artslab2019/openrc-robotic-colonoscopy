@@ -4,7 +4,6 @@
 
 [![Paper](https://img.shields.io/badge/arXiv-2604.03781-b31b1b.svg)](https://arxiv.org/abs/2604.03781)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow.svg)](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Open-H-Embodiment/tree/main/Endoscopy/ut_austin/arts_lab/colonoscope_lerobot)
-[![Design Paper](https://img.shields.io/badge/arXiv-2509.10735-b31b1b.svg)](https://arxiv.org/abs/2509.10735)
 [![License: CC BY 4.0](https://img.shields.io/badge/Dataset%20License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 OpenRC is an open-source framework that **robotizes a conventional clinical colonoscope without altering its workflow.** A modular robotic platform actuates the scope's existing insertion-tube and steering knobs while simultaneously recording the endoscopic video, operator commands, low-level actuation signals, and the distal-tip pose. The result is a reproducible testbed for studying robotic colonoscopy, imitation/vision-language-action learning, and surgical autonomy. 
@@ -116,11 +115,16 @@ A representative episode (`episode_000370`) for the task *"Insert the scope whil
 
 ### Quickstart
 
-The dataset uses **LeRobot format v2.1**, which requires **`lerobot==0.33`**. Download the subset directly with the HuggingFace Hub client:
+The dataset uses **LeRobot format v2.1**, which requires **`lerobot==0.33`**.
+
+1. Install `torch` by following the [official PyTorch installation instructions](https://pytorch.org/get-started/locally/).
+2. Install the remaining dataset and visualization dependencies:
 
 ```bash
-pip install huggingface_hub "lerobot==0.33"
+pip install huggingface_hub "lerobot==0.33" numpy tqdm rerun
 ```
+
+3. Download the dataset subset from HuggingFace:
 
 ```python
 from huggingface_hub import snapshot_download
@@ -133,7 +137,7 @@ local_dir = snapshot_download(
 print("Downloaded to:", local_dir)
 ```
 
-Then load it with the LeRobot API (pointing at the downloaded subfolder):
+4. Load it with the LeRobot API from the downloaded subfolder:
 
 ```python
 from lerobot.common.datasets.lerobot_dataset import LeRobotDataset
@@ -147,6 +151,21 @@ print(dataset)
 sample = dataset[0]            # a single frame with video + state + action
 print(sample.keys())
 ```
+
+### Visualization
+
+The repository includes [`lerobot_dataset_viz.py`](lerobot_dataset_viz.py), a small Rerun-based viewer for inspecting dataset episodes frame-by-frame.
+
+Example:
+
+```bash
+python lerobot_dataset_viz.py \
+    --repo-id nvidia/PhysicalAI-Robotics-Open-H-Embodiment \
+    --episode-index 370 \
+    --root /path/to/snapshot_download/Endoscopy/ut_austin/arts_lab/colonoscope_lerobot
+```
+
+By default the script opens a local Rerun viewer. Pass `--save 1 --output-dir path/to/dir` to write an `.rrd` file instead, or use `--mode distant` to stream from a remote machine.
 
 See the [dataset card](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Open-H-Embodiment/blob/main/Endoscopy/ut_austin/arts_lab/colonoscope_lerobot/README.md) for the authoritative feature schema and any version-specific loading notes.
 
