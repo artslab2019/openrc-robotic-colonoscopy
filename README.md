@@ -211,4 +211,4 @@ The mechanical design and modeling of the feeding and bending modules:
 
 ## License & Acknowledgements
 
-The dataset is released under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and hosted within NVIDIA's PhysicalAI Open-H-Embodiment collection. Hardware and phantom development were carried out at the **Advanced Robotic Technologies for Surgery (ARTS) Lab, The University of Texas at Austin.**
+The dataset is released under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and hosted within NVIDIA's PhysicalAI Open-H-Embodiment collection. Hardware and phantom development were carried out at the Advanced Robotic Technologies for Surgery (ARTS) Lab, The University of Texas at Austin, and Rice University and the Bookout Center at Houston Methodist Hospital. This work was supported by the National Cancer Institute of the National Institutes of Health under Award Number R21CA280747. 
